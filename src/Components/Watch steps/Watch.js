@@ -13,7 +13,7 @@ const Watch = () => {
         console.log(steps)
     },[steps])
     return (
-        <div>
+        <div style={{border:'2px solid purple',margin:'5px',borderRadius:'10px'}}>
             <p>The step is: {steps}</p>
             <button onClick={increaseSteps}>Count</button>
             <DIsplay name='Alamein' steps={steps}></DIsplay>
