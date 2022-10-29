@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Device from './Components/Device/Device';
+import Watch from './Components/Watch steps/Watch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Device name="iphone" price="13000"></Device>
+     {/* //! Main kotha holo app js a value disi then ata use hoiche device.js a then price ta deviceDEtails thke ana hoiche */}
+      <Watch ></Watch>
     </div>
   );
 }
